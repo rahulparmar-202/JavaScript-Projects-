@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch : Project 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!--  Nav-bar , Day-Night Modes  -->
+    <nav>
+        <div class="left-nav">
+            <h1>Stop-Watch</h1>
+        </div>
+
+        <div class="right-nav">
+            <button class="day-night-modes js-dn-mode" onclick="DayNightMode()">
+                <!-- HTML through JavaScript -->
+
+            </button>
+        </div>
+    </nav>
+
+    <!-- Container or Main-Body -->
+    <div class="container">
+        <h2>Welcome</h2>
+
+        <div id="time">
+            <div class="hour">
+                <span class="digit" id="hr">00</span>
+                <span class="txt">Hr</span>
+            </div>
+
+            <div class="minute">
+                <span class="digit" id="min">00</span>
+                <span class="txt">Min</span>
+            </div>
+
+            <div class="second">
+                <span class="digit" id="sec">00</span>
+                <span class="txt">Sec</span>
+            </div>
+
+            <span class="digit" id="count">00</span>
+        </div>
+
+        <div id="buttons">
+            <button class="btn" id="reset">Reset</button>
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="stop">Stop</button>
+        </div>
+
+        <div class="notes">
+            <p class="notes-reset note">press <span class="r-key">R</span> or <span class="r-key">r</span> on your KEY_BOARD or <span class="r-key">RESET</span> button to <span class="r-key">Reset</span>.</p>
+            <p class="notes-start note">press <span class="s-key">S</span> or <span class="s-key">s</span> on your KEY_BOARD or <span class="s-key">START</span> button to <span class="s-key">Start</span>.</p>
+            <p class="notes-stop note">press <span class="p-key">P</span> or <span class="p-key">p</span> on your KEY_BOARD or <span class="p-key">STOP</span> button to <span class="p-key">Pause</span>. also <span class="s-key">S , s second time</span> to Pause</p>
+            <p class="note">press <span class="modeChange">M , m </span>to Change Theme-Mode.</p>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
